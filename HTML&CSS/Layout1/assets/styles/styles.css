@@ -1,0 +1,131 @@
+body {
+    height: 100vh;
+    border: solid 1px #fff;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+header, footer, section {
+    padding: 0 100px;
+}
+header, footer {
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    color:#ffffff;
+}
+header {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 64px;
+}
+
+    .header-navigation {
+        flex-grow:1;
+    }
+    .header-navigation-container{
+        justify-content: flex-end;
+    }
+    .header-navigation-menu-item {
+        margin: 0 2em 0 0;
+    }
+        .header-navigation-menu-item:last-child {
+            margin: 0 0 0 0;
+        }
+        .header-navigation-menu-item a{
+            color:#ffffff;
+            text-decoration: none;
+        }
+footer {
+    flex-direction: column;
+    justify-content: center;
+    min-height: 128px;
+    font-size: 12px;
+    }
+
+    .footer-social-item {
+        margin: 0 2em 0.5em 0;
+    }
+        .footer-social-item:last-child {
+            margin: 0
+        }
+
+
+.footer-social-container,
+.header-navigation-container {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    font-size: 18px;
+    color: #ffff;
+}
+
+
+
+.section-introduction {
+    height: 100%;
+    width: auto;
+    background-image: url("../images/content/image.svg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    color:#ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.introduction-title-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+    .introduction-title-col *:not(.btn-download) {
+        margin: 0 0 48px 0;
+    }
+
+h1 {
+    font-size: 36px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.introduction-title::after {
+    content:'';
+    display: block;
+    width: 4em;
+    height: 2px;
+    background-color: #fff;
+}
+
+.introduction-text {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.btn-download {
+    background-color: transparent;
+    color: #ffffff;
+    width: 150px;
+    height: 42px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 18px;
+}
+
+    .btn-download:hover {
+        cursor: pointer;
+    }
+
+
+
+
+
+

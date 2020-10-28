@@ -1,58 +1,72 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <title>My first layout</title>
+        <link rel="stylesheet" type="text/css" href="./assets/styles/styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <header>
-            <div>
-                <img src="assets/images/header/logo.svg">
+            <div class="header-logo-img">
+                <img src="./assets/images/header/logo.svg" alt="Logo">
             </div>
-                <ul>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Reviews</a></li>
-                    <li><a href="#">Contact</a></li>
+            <nav class="header-navigation">
+                <ul class="header-navigation-container">
+                    <li class="header-navigation-menu-item"><a href="#">Features</a></li>
+                    <li class="header-navigation-menu-item"><a href="#">About</a></li>
+                    <li class="header-navigation-menu-item"><a href="#">Pricing</a></li>
+                    <li class="header-navigation-menu-item"><a href="#">Reviews</a></li>
+                    <li class="header-navigation-menu-item"><a href="#">Contact</a></li>
                 </ul>
+            </nav>
         </header>
-        <div class="wrapper">
-            <div>
+        <section class="section-introduction">
+            <div class="introduction-title-col">
                 <div>
-                    <img src="assets/images/content/logo.svg" />
+                    <img src="./assets/images/content/logo.svg" alt="Logo introduction section"  />
                 </div>
-                <div></div>
-                <div></div>
-                <div>
-                    <button>Download</button>
-                </div>
+                <h1 class="introduction-title">
+                    MODERN AXURE TEMPLATE<br />FOR BEAUTIFUL PROTOTYPES
+                </h1>
+                <span class="introduction-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean<br />
+                    euismod bibendum laoreet. Proin gravida dolor sit amet lacus<br />
+                    accumsan et viverra justo commodo.
+                </span>
+                <button class="btn-download">
+                    Download
+                </button>
             </div>
-            <div>
+            <div class="introduction-form-col">
                 <form>
                     2
                 </form>
             </div>
+        </section>
 
-
-        </div>
+        <section>1</section>
+        <section>2</section>
+        <section>3</section>
+        <section>4</section>
+        <section>5</section>
+        <section>6</section>
+        <section>7</section>
 
         <footer>
-            <ul class="container">
-                <li><a href="#"><img src="assets/images/footer/facebook.svg"></a></li>
-                <li><a href="#"><img src="assets/images/footer/gmail.svg"></a></li>
-                <li><a href="#"><img src="assets/images/footer/twitter.svg"></a></li>
-                <li><a href="#"><img src="assets/images/footer/instagram.svg"></a></li>
-                <li><a href="#"><img src="assets/images/footer/linkedin.svg"></a></li>
-                <li><a href="#"><img src="assets/images/footer/pinterest.svg"></a></li>
+            <ul class="footer-social-container">
+                <li class="footer-social-item"><a href="#"><img src="assets/images/footer/facebook.svg" alt="Facebook"/></a></li>
+                <li class="footer-social-item"><a href="#"><img src="assets/images/footer/gmail.svg" alt="Gmail" /></a></li>
+                <li class="footer-social-item"><a href="#"><img src="assets/images/footer/twitter.svg" alt="Twitter" /></a></li>
+                <li class="footer-social-item"><a href="#"><img src="assets/images/footer/instagram.svg" alt="Instagram" /></a></li>
+                <li class="footer-social-item"><a href="#"><img src="assets/images/footer/linkedin.svg" alt="Linkedin" /></a></li>
+                <li class="footer-social-item"><a href="#"><img src="assets/images/footer/pinterest.svg" alt="Pinterest" /></a></li>
             </ul>
-            <div>
-                <span>© 2020 Axure Themes</span>
-            </div>
-
-
+            <p>
+                © 2020 Axure Themes
+            </p>
         </footer>
 
     </body>
