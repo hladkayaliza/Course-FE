@@ -34,6 +34,8 @@ p {
     font-style: normal;
     line-height: 18px;
     text-transform: capitalize;
+    width: 150px;
+    height: 42px;
 }
     .btn:hover {
              cursor: pointer;
@@ -42,6 +44,12 @@ p {
 .title {
     text-transform: uppercase;
     font-size: 36px;
+}
+.subtitle {
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #333333;
 }
 .flex-centre {
     display: flex;
@@ -161,8 +169,8 @@ h1 {
 .btn-download {
     background-color: transparent;
     border-color: #ffffff;
-    width: 150px;
-    height: 42px;
+    /*width: 150px;*/
+    /*height: 42px;*/
 }
 
 
@@ -256,6 +264,8 @@ h1 {
         opacity: 0.4;
     }
 
+
+    /*section social*/
 .section-social {
     display: flex;
     flex-display: row;
@@ -285,11 +295,9 @@ h1 {
 }
 
 .social-title {
-    font-weight: 700;
-    text-transform: capitalize;
     margin-bottom: 1em;
-    color: #333333;
 }
+
 
 .section-stylish {
     width: auto;
@@ -298,20 +306,15 @@ h1 {
     background-repeat: no-repeat;
     background-size:cover;
     filter:sepia(0.2);
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*align-items: center;*/
-    /*justify-content:center;*/
     margin: 0 auto;
     color: #FFFFFF;
 }
 .section-stylish-container {
-
+    margin: 5em 0 ;
 }
-
-.section-stylish-container > *:not(:last-child) {
-    margin-bottom: 26px;
-}
+    .section-stylish-container p{
+        margin: 1em auto 2em;
+    }
 
 .stylish-title {
     color: #FFFFFF;
@@ -325,56 +328,40 @@ h1 {
         margin: 0.4em auto 0;
     }
 
+/*section contact us*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-.section-contact-us {
-    display: flex;
-    flex-direction: column;
-}
-.section-contact-us-header {
-    display: flex;
-    flex-direction: column;
+.section-contact-us-container {
+    margin: 5em 0 7em;
 }
 
+.section-contact-us-header p {
+    margin: 1em auto 2em;
+}
 .contact-us-title {
     color: #212121;
-    margin: 0  auto;
 }
-
-.contact-us-title:after {
-    display: block;
-    content: '';
-    height: 1px;
-    width: 2em;
-    background-color: #FF8B38;
-    margin: 0.6em auto;
-}
+    .contact-us-title:after {
+        display: block;
+        content: '';
+        height: 1px;
+        width: 2em;
+        background-color: #FF8B38;
+        margin: 0.4em auto 0;
+    }
 
 .contact-us-subtitle {
-    margin: 0.6em auto 5em;
     color: #86878B;
 }
-
 .contact-us-form {
     display: flex;
     flex-direction: column;
 }
 
+
+
 .contact-us-input-container {
     display: flex;
     flex-direction: row;
-    /*justify-content: center;*/
 }
 
 .contact-us-input-container input,
@@ -392,15 +379,13 @@ h1 {
     color: #BDBDBD;
     font-size: 16px;
 }
-
 .input-container-left {
     display: flex;
     flex-direction: column;
 }
 
 .btn-contact-us {
-    width: 150px;
-    height: 42px;
     background-color: #FF8B38;
     border-color: #FF8B38;
 }
+
