@@ -4,38 +4,51 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My first layout</title>
+        <link rel="stylesheet" type="text/css" href="./assets/styles/normalize.css">
         <link rel="stylesheet" type="text/css" href="./assets/styles/styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <header>
-            <div class="header-logo-img">
-                <img src="./assets/images/header/logo.svg" alt="Logo">
+        <header class="nav">
+            <div class="header-logo-wrapper">
+                <a href="#" title="Logo">
+                    <img src="./assets/images/header/logo.svg" alt="Logo">
+                </a>
             </div>
             <nav class="header-navigation">
                 <ul class="header-navigation-container">
-                    <li class="header-navigation-menu-item"><a href="#">Features</a></li>
-                    <li class="header-navigation-menu-item"><a href="#">About</a></li>
-                    <li class="header-navigation-menu-item"><a href="#">Pricing</a></li>
-                    <li class="header-navigation-menu-item"><a href="#">Reviews</a></li>
-                    <li class="header-navigation-menu-item"><a href="#">Contact</a></li>
+                    <li>
+                        <a href="#">Features</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#">Reviews</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
                 </ul>
             </nav>
         </header>
         <section class="section-introduction">
             <div class="introduction-title-col">
-                <div>
+                <div class="introduction-img-wrapper">
                     <img src="./assets/images/content/logo.svg" alt="Logo introduction section"  />
                 </div>
                 <h1 class="introduction-title">
                     MODERN AXURE TEMPLATE<br />FOR BEAUTIFUL PROTOTYPES
                 </h1>
-                <span class="introduction-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean<br />
-                    euismod bibendum laoreet. Proin gravida dolor sit amet lacus<br />
+                <p class="introduction-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                    euismod bibendum laoreet. Proin gravida dolor sit amet lacus
                     accumsan et viverra justo commodo.
-                </span>
+                </p>
                 <button class="btn btn-download">
                     Download
                 </button>
@@ -43,74 +56,86 @@
             <div class="introduction-form-col">
                 <form class="form-trial" action="#">
                     <div class="form-trial-header">
-                        <span class="trial-header-title"> Try Your <span class="trial-header-key-word">FREE</span> Trial Today</span>
-
+                        <h3 class="trial-header-title">
+                            Try Your <span class="trial-header-key-word">FREE</span> Trial Today
+                        </h3>
                     </div>
                     <div class="form-trial-body">
-                        <div class="form-trial-input">
+                        <div class="form-trial-control">
                             <input name="Name" placeholder="Name" type="text" required />
                         </div>
-                        <div class="form-trial-input">
+                        <div class="form-trial-control">
                             <input name="Email" placeholder="Email" type="email" required />
                         </div>
-                        <div class="form-trial-input">
+                        <div class="form-trial-control">
                             <input name="Password" placeholder="Password" type="password" required />
                         </div>
-
                     </div>
                     <div class="form-trial-btn-container">
                         <button class="btn-get-started" type="submit">
                             Get Started
                         </button>
                     </div>
-
-
                 </form>
             </div>
         </section>
 
         <section class="section-social">
             <div class="section-social-text-block">
-                <span class="subtitle social-title">Social Media</span>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />Aenean euismod bibendum laoreet.
+                <h3 class="subtitle social-title">Social Media</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
             </div>
-            <ul class="section-social-list">
-                <li class="section-social-item"><a href="#"><img src="assets/images/content/social-icons/facebook.svg" alt="Facebook"/></a> </li>
-                <li class="section-social-item"><a href="#"><img src="assets/images/content/social-icons/gmail.svg" alt="Gmail" /></a></li>
-                <li class="section-social-item"><a href="#"><img src="assets/images/content/social-icons/twitter.svg" alt="Twitter" /></a></li>
-                <li class="section-social-item"><a href="#"><img src="assets/images/content/social-icons/instagram.svg" alt="Instagram" /></a></li>
-                <li class="section-social-item"><a href="#"><img src="assets/images/content/social-icons/linkedin.svg" alt="Linkedin" /></a></li>
-                <li class="section-social-item"><a href="#"><img src="assets/images/content/social-icons/pinterest.svg" alt="Pinterest" /></a></li>
+            <ul class="section-social-container">
+                <li class="section-social-item">
+                    <a href="#">
+                        <img src="assets/images/content/social-icons/facebook.svg" alt="Facebook"/>
+                    </a>
+                </li>
+                <li class="section-social-item">
+                    <a href="#">
+                        <img src="assets/images/content/social-icons/gmail.svg" alt="Gmail" />
+                    </a>
+                </li>
+                <li class="section-social-item">
+                    <a href="#"><img src="assets/images/content/social-icons/twitter.svg" alt="Twitter" />
+                    </a>
+                </li>
+                <li class="section-social-item">
+                    <a href="#">
+                        <img src="assets/images/content/social-icons/instagram.svg" alt="Instagram" />
+                    </a>
+                </li>
+                <li class="section-social-item">
+                    <a href="#">
+                        <img src="assets/images/content/social-icons/linkedin.svg" alt="Linkedin" />
+                    </a>
+                </li>
+                <li class="section-social-item">
+                    <a href="#">
+                        <img src="assets/images/content/social-icons/pinterest.svg" alt="Pinterest" />
+                    </a>
+                </li>
             </ul>
         </section>
-
-        <section>1</section>
-        <section>2</section>
-        <section>3</section>
-        <section>4</section>
-
-        <section class="section-stylish flex-centre">
-            <div class="section-stylish-container flex-centre">
-                <span class="title stylish-title">STYLISH AXURE DESIGN</span>
+        <section class="section-stylish ">
+                <h2 class="title stylish-title">STYLISH AXURE DESIGN</h2>
                 <p>Use the sections you need, remove the ones you don't.  Create g</p>
                 <button class="btn btn-download">Download</button>
-            </div>
         </section>
 
-        <section class="section-contact-us flex-centre">
-            <div class="section-contact-us-container">
-            <div class="section-contact-us-header flex-centre">
-                <span class="title contact-us-title">contact us</span>
+        <section class="section-contact-us ">
+            <header class="contact-us-header">
+                <h2 class="title contact-us-title">contact us</h2>
                 <p class="contact-us-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-                <form action="#" method="post" class="contact-us-form flex-centre">
+            </header>
+            <form action="#" method="post" class="contact-us-form">
                     <div class="contact-us-input-container">
-                        <div class="input-container-left">
+                        <div class="input-container">
                             <input type="text" name="Name" placeholder="Name" />
                             <input type="email" name="Email" placeholder="Email" />
                             <input type="text" name="Subject" placeholder="Subject" />
                         </div>
-                        <div class="input-container-right">
+                        <div class="input-container">
                             <textarea type="text" name="Message" placeholder="Message"></textarea>
                         </div>
                     </div>
@@ -118,18 +143,41 @@
                     <button class="btn btn-contact-us" type="submit">
                         Send Message
                     </button>
-                </form>
-            </div>
+
+            </form>
         </section>
 
         <footer>
             <ul class="footer-social-container">
-                <li class="footer-social-item"><a href="#"><img src="./assets/images/footer/facebook.svg" alt="Facebook"/></a></li>
-                <li class="footer-social-item"><a href="#"><img src="./assets/images/footer/gmail.svg" alt="Gmail" /></a></li>
-                <li class="footer-social-item"><a href="#"><img src="./assets/images/footer/twitter.svg" alt="Twitter" /></a></li>
-                <li class="footer-social-item"><a href="#"><img src="./assets/images/footer/instagram.svg" alt="Instagram" /></a></li>
-                <li class="footer-social-item"><a href="#"><img src="./assets/images/footer/linkedin.svg" alt="Linkedin" /></a></li>
-                <li class="footer-social-item"><a href="#"><img src="./assets/images/footer/pinterest.svg" alt="Pinterest" /></a></li>
+                <li>
+                    <a href="#">
+                        <img src="./assets/images/footer/facebook.svg" alt="Facebook"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./assets/images/footer/gmail.svg" alt="Gmail" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="./assets/images/footer/twitter.svg" alt="Twitter" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./assets/images/footer/instagram.svg" alt="Instagram" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./assets/images/footer/linkedin.svg" alt="Linkedin" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./assets/images/footer/pinterest.svg" alt="Pinterest" />
+                    </a>
+                </li>
             </ul>
             <p>
                 © 2020 Axure Themes
