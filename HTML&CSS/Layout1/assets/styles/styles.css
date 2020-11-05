@@ -1,12 +1,21 @@
+:root {
+    --section-header-marging: 30px
+}
+
+
 body {
     height: 100vh;
     border: solid 1px #fff;
     margin: 0;
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
+    color: #86878B;
 }
 button:focus {
     outline: none;
+}
+button:hover {
+    opacity: 0.6;
 }
 input,textarea {
     color: #86878B;
@@ -31,6 +40,15 @@ h1 {
     text-transform: uppercase;
     margin: 0px;
 }
+h3 {
+    color: #212121;
+}
+h4 {
+    color: #333333;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 20px;
+}
 
 a {
     display: inline-block;
@@ -41,11 +59,9 @@ a {
     border-radius: 5px;
     font-weight: 500;
     font-size: 18px;
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
     line-height: 18px;
     text-transform: capitalize;
-    width: 150px;
+    width: 164px;
     height: 42px;
 }
     .btn:hover {
@@ -55,7 +71,23 @@ a {
 .title {
     text-transform: uppercase;
     font-size: 36px;
+    font-weight: normal;
+    position: relative;
+    padding-bottom: 30px;
+    color: #212121;
+
 }
+
+    .title::after {
+        position: absolute;
+        bottom: 0;
+        left: 45%;
+        content: ' ';
+        display: block;
+        height: 2px;
+        width: 3em;
+        background-color: #FF8B38;
+    }
 .subtitle {
     font-weight: 700;
     font-size: 20px;
@@ -73,12 +105,22 @@ header, footer, section {
     padding: 0 100px;
 }
 
-header.contact-us-header {
+header.contact-us-header,
+header.awesome-header,
+header.stylish-header,
+header.pricing-header,
+header.feedbacks-header {
     padding: 0;
     text-align: center;
+    margin: 0 0 64px 0;
 }
-header.contact-us-header > * {
-    margin-bottom: 40px;
+header.contact-us-header > :not(p),
+header.awesome-header > :not(p),
+header.stylish-header > :not(p),
+header.pricing-header > :not(p),
+header.feedbacks-header > :not(p)
+{
+    margin-bottom: var(--section-header-marging);
 }
 
 header.nav, footer {
@@ -159,13 +201,20 @@ section {
         margin: 0 0 48px 0;
     }
 
-.introduction-title::after {
-    content:'';
-    display: block;
-    width: 4em;
-    height: 2px;
-    background-color: #fff;
+.introduction-title {
+    position: relative;
+    padding-bottom: var(--section-header-marging);
 }
+    h1.introduction-title::after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        content:' ';
+        display: block;
+        width: 4em;
+        height: 2px;
+        background-color: #fff;
+    }
 
 .introduction-text {
     font-style: normal;
@@ -264,7 +313,6 @@ section {
 /*section social*/
 .section-social {
     display: flex;
-    flex-display: row;
     justify-content: space-between;
     align-items: center;
     padding: 25px 100px;
@@ -291,70 +339,66 @@ section {
     margin: 0;
     padding: 0;
 }
-
 .social-title {
     margin-bottom: 1em;
 }
 
-.section-stylish {
+/*SECTION AWESOME POINTS*/
+.section-awesome-points {
+    padding: 100px;
+}
+.awesome-header h2:after {
+    width: 4em;
+}
+
+.awesome-points-container,
+.feedbacks-container,
+.pricing-container{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 55px 100px;
+    justify-content: space-around;
+}
+
+.awesome-point-item {
+    text-align: center;
+    padding: 0 40px;
+}
+    .awesome-point-item > *:not(p) {
+        margin-bottom: 40px;
+    }
+
+
+/*SECTION STYLISH*/
+.section-stylish {
+    padding: 65px 100px;
+    background-blend-mode: multiply;
+    background-color: rgba(51, 51, 51, 0.58);
     background-image: url("../images/content/background-architecture.svg");
     background-repeat: no-repeat;
     background-size:cover;
-    margin: 0 0 0.5em 0;
     color: #FFFFFF;
 }
-.section-stylish :not(.btn-download)  {
-    margin: 0 0 30px 0;
+.section-stylish >  :not(.stylish-container)  {
+    margin: 0 0 40px 0;
 }
 
-.section-stylish-container {
-    margin: 5em 0 ;
+.stylish-container {
+    text-align: center;
 }
-    .section-stylish-container p{
-        margin: 1em auto 2em;
-    }
 
 .stylish-title {
     color: #FFFFFF;
 }
-    .stylish-title:after {
-        display: block;
-        content: '';
-        height: 1px;
-        width: 2em;
-        background-color: #FFFFFF;
-        margin: 0.4em auto 0;
-    }
+h2.stylish-title::after {
+    background-color: #FFFFFF;
+
+}
 
 
-
-/*section contact us*/
+/*SECTION CONTACT US*/
 .section-contact-us {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 70px 100px;
+    padding: 100px;
 }
 
-.contact-us-title {
-    color: #212121;
-}
-    .contact-us-title:after {
-        display: block;
-        content: '';
-        height: 1px;
-        width: 2em;
-        background-color: #FF8B38;
-        margin: 0.4em auto 0;
-    }
-
-.contact-us-subtitle {
-    color: #86878B;
-}
 .contact-us-form {
     display: flex;
     flex-direction: column;
@@ -407,6 +451,70 @@ section {
 .btn-contact-us {
     background-color: #FF8B38;
     border-color: #FF8B38;
+}
+
+/*SECTION TABS*/
+.section-tabs {
+    padding: 100px;
+}
+/*SECTION PRICING*/
+.section-pricing {
+    padding: 100px;
+}
+/*SECTION FEEDBACKS*/
+.section-feedbacks {
+    padding: 100px;
+}
+
+.feedback-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-block {
+    max-height: 120px;
+    max-width: 300px;
+    background-color: #F5F5F5;
+    padding: 18px;
+    margin:  0 0 40px 0;
+    position: relative;
+    z-index: 2;
+}
+
+    .feedback-block ::after {
+        content: '';
+        position: absolute; /* Абсолютное позиционирование */
+        left: 20px; bottom: -20px; /* Положение треугольника */
+        border: 20px solid transparent;
+        border-top: 20px solid green;
+        z-index: 4;
+    }
+
+.feedback-text {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    word-break: break-word;
+}
+.feedback-user {
+    display: flex;
+    align-items: center;
+}
+.user-data > :not(p) {
+    margin: 0 0 6px 0;
+}
+
+.user-data p {
+    font-size: 14px;
+}
+.user-avatar {
+    margin: 0 15px 0 0;
+}
+
+
+.section-pricing,
+.section-tabs {
+    background-color: #F5F5F5;
 }
 
 
