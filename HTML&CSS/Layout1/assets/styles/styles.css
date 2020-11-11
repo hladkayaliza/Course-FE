@@ -3,7 +3,6 @@
     --color-white: #fff;
 }
 
-
 body {
     height: 100vh;
     border: solid 1px var(--color-white);
@@ -15,10 +14,9 @@ body {
 button:focus {
     outline: none;
 }
-button:hover {
-    opacity: 0.6;
-}
-input,textarea {
+
+input,
+textarea {
     color: #86878B;
     opacity: 0.5;
 }
@@ -26,24 +24,28 @@ textarea {
     resize: none;
     font-family: 'Raleway', sans-serif;
 }
-input:focus,
-textarea:focus{
-    outline: none;
-    color: #86878B;
-    opacity: 1;
-}
+    input:focus,
+    textarea:focus{
+        outline: none;
+        color: #86878B;
+        opacity: 1;
+    }
+
 p {
     margin: 0;
 }
+
 h1 {
     font-size: 36px;
     font-weight: normal;
     text-transform: uppercase;
     margin: 0px;
 }
+
 h3 {
     color: #212121;
 }
+
 h4 {
     color: #333333;
     margin-block-start: 0;
@@ -54,6 +56,7 @@ h4 {
 a {
     display: inline-block;
 }
+
 .btn {
     color: var(--color-white);
     border: 2px solid var(--color-white);
@@ -64,9 +67,10 @@ a {
     text-transform: capitalize;
     width: 164px;
     height: 42px;
+    transition: color 1s ease;
 }
     .btn:hover {
-             cursor: pointer;
+        cursor: pointer;
      }
 
 .title {
@@ -89,21 +93,21 @@ a {
         width: 3em;
         background-color: #FF8B38;
     }
+
 .subtitle {
     font-weight: 700;
     font-size: 20px;
     text-transform: capitalize;
     color: #333333;
 }
-.flex-centre {
-    display: flex;
-    /*flex-direction: column;*/
-    align-items: center;
-}
 
 
 header, footer, section {
     padding: 0 100px;
+}
+
+section {
+    font-weight: 400;
 }
 
 header.contact-us-header,
@@ -115,21 +119,23 @@ header.feedbacks-header {
     text-align: center;
     margin: 0 0 64px 0;
 }
-header.contact-us-header > :not(p),
-header.awesome-header > :not(p),
-header.stylish-header > :not(p),
-header.pricing-header > :not(p),
-header.feedbacks-header > :not(p)
-{
-    margin-bottom: var(--section-header-marging);
-}
+    header.contact-us-header > :not(p),
+    header.awesome-header > :not(p),
+    header.stylish-header > :not(p),
+    header.pricing-header > :not(p),
+    header.feedbacks-header > :not(p)
+    {
+        margin-bottom: var(--section-header-marging);
+    }
 
-header.nav, footer {
+header.nav,
+footer {
     background-color: #000000;
     display: flex;
     align-items: center;
     color:var(--color-white);
 }
+
 .nav {
     min-height: 64px;
 }
@@ -140,16 +146,22 @@ header.nav, footer {
     .header-navigation-container{
         justify-content: flex-end;
     }
-    .header-navigation-container > li {
-        margin: 0 2em 0 0;
-    }
-        .header-navigation-container > li:last-child {
-            margin: 0 0 0 0;
+        .header-navigation-container > li {
+            margin: 0 2em 0 0;
         }
-        .header-navigation-container > li a {
-            color:var(--color-white);
-            text-decoration: none;
-        }
+            .header-navigation-container > li:last-child {
+                margin: 0 0 0 0;
+            }
+            .header-navigation-container > li a {
+                color:var(--color-white);
+                text-decoration: none;
+                transition: color 0.5s ease;
+            }
+
+                .header-navigation-container > li a:hover {
+                    color:#FF9B51;
+
+                }
 
 footer {
     flex-direction: column;
@@ -157,6 +169,7 @@ footer {
     min-height: 128px;
     font-size: 12px;
     }
+
 .footer-social-container > li{
     margin: 0 2em 0.5em 0;
 }
@@ -164,10 +177,7 @@ footer {
         margin: 0;
     }
 
-section {
-    font-weight: 400;
-;
-}
+
 
 .footer-social-container,
 .header-navigation-container {
@@ -229,7 +239,14 @@ section {
 .btn-download {
     background-color: transparent;
     border-color: var(--color-white);
+    transition: background-color 0.8s ease;
+    transition: color 0.8s ease;
+
 }
+    .btn-download:hover {
+        background-color: #ffffff;
+        color: #FF9B51;
+    }
 
 
 .introduction-form-col {
@@ -245,7 +262,6 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
 
 .form-trial-header {
@@ -269,9 +285,10 @@ section {
     font-size: 16px;
     text-transform: capitalize;
 }
-.btn-get-started:hover {
-    cursor: pointer;
-}
+
+    .btn-get-started:hover {
+        cursor: pointer;
+    }
 
 .trial-header-title {
     font-size: 16px;
@@ -306,7 +323,6 @@ section {
     .form-trial-control input ::placeholder {
         font-size: 16px;
         color:#BDBDBD;
-    ;
         opacity: 0.4;
     }
 
@@ -449,11 +465,7 @@ h2.stylish-title::after {
     margin-bottom: 0;
 }
 
-.btn-tabs-download,
-.btn-contact-us {
-    background-color: #FF8B38;
-    border-color: #FF8B38;
-}
+
 
 /*SECTION TABS*/
 .section-tabs {
@@ -496,7 +508,12 @@ h2.stylish-title::after {
     height: 112px;
     background-color: #333333;
     border-radius: 0;
+    transition: background-color 0.8s ease;
 }
+    .btn-tab:not(.active):hover {
+        background-color: #1c1c1c;
+    }
+
 .active {
     background-color: #FF9B51;
 }
@@ -528,10 +545,11 @@ h2.stylish-title::after {
 
     .feedback-block ::after {
         content: '';
-        position: absolute; /* Абсолютное позиционирование */
-        left: 20px; bottom: -20px; /* Положение треугольника */
-        border: 20px solid transparent;
-        border-top: 20px solid green;
+        position: absolute;
+        left: 8px;
+        bottom: -30px;
+        border: 14px solid transparent;
+        border-top: 20px solid #F5F5F5;
         z-index: 4;
     }
 
@@ -626,3 +644,19 @@ div.pricing-header-item:hover,
 div.pricing-item:hover {
     transform: none;
 }
+
+
+.btn-get-started,
+.btn-tabs-download,
+.btn-contact-us {
+    background-color: #FF8B38;
+    border-color: #FF8B38;
+    transition: all 0.7s ease;
+}
+
+    .btn-get-started:hover,
+    .btn-tabs-download:hover,
+    .btn-contact-us:hover {
+        border-color: #d25800;
+        background-color: #d25800;
+    }
