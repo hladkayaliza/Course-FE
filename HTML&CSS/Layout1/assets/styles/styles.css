@@ -449,6 +449,7 @@ h2.stylish-title::after {
     margin-bottom: 0;
 }
 
+.btn-tabs-download,
 .btn-contact-us {
     background-color: #FF8B38;
     border-color: #FF8B38;
@@ -456,8 +457,51 @@ h2.stylish-title::after {
 
 /*SECTION TABS*/
 .section-tabs {
+    display: flex;
+    justify-content: space-between;
     padding: 100px;
 }
+.tabs-text-block {
+    display: flex;
+    flex-direction: column;
+    max-width: 510px;
+}
+
+    .tabs-text-block > :not(.btn)
+    {
+        margin-bottom: 45px;
+    }
+    .tabs-text-block div p:not(:last-child){
+        margin-bottom: 30px;
+    }
+.tabs-img-container img {
+    padding: 15px;
+}
+
+.tabs-btn-container {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    border-radius: 5%;
+    overflow: hidden;
+}
+    .tabs-btn-container div {
+        width: max-content;
+        margin-bottom: 5px;
+        border: none;
+    }
+
+.btn-tab {
+    width: 112px;
+    height: 112px;
+    background-color: #333333;
+    border-radius: 0;
+}
+.active {
+    background-color: #FF9B51;
+}
+
+
 /*SECTION PRICING*/
 .section-pricing {
     padding: 100px;
@@ -518,17 +562,16 @@ h2.stylish-title::after {
     background-color: #F5F5F5;
 }
 
-.pricing-container:not(div p){
+.pricing-container {
+    align-items: flex-end;
+}
+
+.pricing-container {
     transition: transform 2s ease;
 }
-    div.pricing-container :hover {
+    .pricing-container :hover {
         transform: scale(1.1);
     }
-
-div.pricing-container>p:hover {
-    transform: none;
-
-}
 
 .pricing-header-item {
     background-color: #333333;
@@ -539,7 +582,7 @@ div.pricing-container>p:hover {
     padding: 15px 0;
 }
 
-.pricing-header-price-item {
+.price-item {
     font-family: Open Sans, sans-serif;
     font-size: 38px;
     padding: 20px 130px;
@@ -577,4 +620,9 @@ div.pricing-container>p:hover {
     text-transform: uppercase;
     color: var(--color-white);
     opacity: 1;
+}
+
+div.pricing-header-item:hover,
+div.pricing-item:hover {
+    transform: none;
 }

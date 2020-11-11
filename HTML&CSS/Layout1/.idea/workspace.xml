@@ -46,6 +46,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\FE\Media" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -58,6 +63,8 @@
       <workItem from="1603919343869" duration="30216000" />
       <workItem from="1604339198636" duration="34155000" />
       <workItem from="1604787108685" duration="15597000" />
+      <workItem from="1604946546925" duration="797000" />
+      <workItem from="1605033623937" duration="9721000" />
     </task>
     <servers />
   </component>
@@ -77,14 +84,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1604339225817">
+    <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1604946745824">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604339225817" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1604005674797">
+    <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604946745824" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1605036818543">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1604005674797" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1605036818543" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1604787562615">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
